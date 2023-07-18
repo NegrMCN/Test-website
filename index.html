@@ -1,43 +1,229 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>Testing</title>
-    <style>
-      body {
-        background-color: #78adab;
-      }
-
-      img {
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Twitter</title>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+</head>
+    <h1>Twitter</h1>
+<style>
+    img {
         width: 100px;
+        height: 100px;
         border-radius: 50px;
+        margin-top: 30px;
         float: left;
         margin-right: 10px;
-      }
-      .text {
-        font-size: large;
-      }
-
-
-      .username {
+    }
+    .profile {
+        position: fixed;
+        top: 240px;
+        left: 10px;
+        
+    }
+    h1 {
+        text-align: center;
+        background-color: aqua; margin: auto;
+    }
+    .username1 {
+        margin-top: 40px;
         font-weight: bold;
-      }
-
-      a href{
-        width: 100px;
-        border-radius: 50px;
-        float: left;
-        margin-right: 10px;
-      }
-
-    </style>
-  </head>
-  <body>
-    <img src="images/macon.jpg" alt="Image of a handsome man">
-   
-    <p class="username">@Negr</p>
-    <p>Hi, my name is Ricardo</p>
-    <a href="images/macon.jpg"><p class="text">Photo of me</p></a>
-    <a href="mailto: maconricardo@gmail.com">My Email</a>
     
-  </body>
+    }
+    .username2 {
+        margin-top: 115px;
+        margin-left: 115px;
+        font-weight: bold;
+    
+    }
+    .heart-btn {
+        position: absolute;
+        top: 12%;
+        left: 17%;
+        transform: translate(-50%, -50%);
+    }
+    .content {
+        border: 2px solid #eae2e1;
+        padding: 13px 16px;
+        border-radius: 5px;
+        display: flex;
+        cursor: pointer;
+    }
+    .content.heart-active{
+        border-color: #f9b9c4;
+        background: #fbd0d8;
+    }
+    .heart{
+        height: 90px;
+        width: 90px;
+        background: url(img.png) no-repeat;
+        background-position: left;
+        background-size: 2900%;
+        position: absolute;
+        top: 50%;
+        left: 21%;
+        transform: translate(-50%, -50%);
+    }
+    .text{
+  font-size: 21px;
+  margin-left: 30px;
+  color: grey;
+  font-family: 'Montserrat',sans-serif;
+    }
+    .heart.heart-active{
+        background-position: right;
+        animation: animate .8s steps(28) 1;
+    }
+    @keyframes animate {
+        0%{
+            background-position: left;
+        }
+        100%{
+            background-position: right;
+        }
+    }
+    .like {
+        margin-left: 30px;
+        font-size: 21px;
+        font-family: 'Montserrat', sans-serif;
+        color: grey;
+    }
+    .like.heart-active{
+        color: black;
+    }
+    .numb::before{
+        content: '12';
+        font-size: 21px;
+        font-weight: 600;
+        font-family: sans-serif;
+        color: #9C9496;
+        margin-left: 7px;
+    }
+    .numb.heart-active:before{
+  content: '13';
+  color: #000;
+    }
+    .text.heart-active{
+  color: #000;
+    }
+    .tweet2 {
+        margin-left: 115px;
+    }
+    .heart-btn1 {
+        position: absolute;
+        top: 23%;
+        left: 17%;
+        transform: translate(-50%, -50%);
+    }
+    .content1 {
+        border: 2px solid #eae2e1;
+        padding: 13px 22px;
+        border-radius: 5px;
+        display: flex;
+        cursor: pointer;
+    }
+    .content1.heart-active1{
+        border-color: #f9b9c4;
+        background: #fbd0d8;
+    }
+    .heart1{
+        height: 90px;
+        width: 90px;
+        background: url(img.png) no-repeat;
+        background-position: left;
+        background-size: 2900%;
+        position: absolute;
+        top: 50%;
+        left: 21%;
+        transform: translate(-50%, -50%);
+    }
+    .text1{
+  font-size: 21px;
+  margin-left: 30px;
+  color: grey;
+  font-family: 'Montserrat',sans-serif;
+    }
+    .heart1.heart-active1{
+        background-position: right;
+        animation: animate .8s steps(28) 1;
+    }
+    @keyframes animate {
+        0%{
+            background-position: left;
+        }
+        100%{
+            background-position: right;
+        }
+    }
+    .like1 {
+        margin-left: 30px;
+        font-size: 21px;
+        font-family: 'Montserrat', sans-serif;
+        color: grey;
+    }
+    .like1.heart-active1{
+        color: black;
+    }
+    .numb1::before{
+        content: '0';
+        font-size: 21px;
+        font-weight: 600;
+        font-family: sans-serif;
+        color: #9C9496;
+        margin-left: 7px;
+    }
+    .numb1.heart-active1:before{
+  content: '1';
+  color: #000;
+    }
+    .text1.heart-active1{
+  color: #000;
+    }
+</style>
+<body style="background-color:rgb(192, 186, 155);">
+    
+    <img src="images/macon.jpg" alt="A Handsome MF">
+    <img class="profile" src="images/nonato.jpg" alt="An Ugly MF">
+    <p class="username1">@Negr</p>
+    <p class="tweet1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Est at fugiat, itaque odit aperiam praesentium iusto error obcaecati excepturi possimus maxime, veniam autem numquam officia eum. Optio animi et ullam.</p>
+    <p class="username2">@Bog</p>
+    <p class="tweet2">BOIIIIIIIIIII</p>
+    <div class="heart-btn">
+        <div class="content">
+            <span class="heart"></span>
+            <span class="text">Like</span>
+            <span class="numb"></span>
+        </div>
+    </div>
+
+    <div class="heart-btn1">
+        <div class="content1">
+            <span class="heart1"></span>
+            <span class="text1">Like</span>
+            <span class="numb1"></span>
+        </div>
+    </div>
+
+    <script>
+        $(document).ready(function(){
+          $(".content").click(function(){
+            $(".content").toggleClass("heart-active")
+            $(".text").toggleClass("heart-active")
+            $(".numb").toggleClass("heart-active")
+            $(".heart").toggleClass("heart-active")
+          });
+        });
+    </script>
+     <script>
+        $(document).ready(function(){
+          $(".content1").click(function(){
+            $(".content1").toggleClass("heart-active1")
+            $(".text1").toggleClass("heart-active1")
+            $(".numb1").toggleClass("heart-active1")
+            $(".heart1").toggleClass("heart-active1")
+          });
+        });
+    </script>
+    </body>
 </html>
