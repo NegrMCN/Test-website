@@ -169,11 +169,12 @@ p {
 }
 
 .dete2 {
+    text-align: center;
     color: white;
     font-size: x-large;
     top: 20%;
     bottom: 0%;
-    right: 20%;
+    right: 0%;
     left: 0%;
     position: absolute;
     z-index: -1;
@@ -202,6 +203,7 @@ p {
 }
 
 .dete2 {
+    text-align: center;
     color: white;
     font-size: larger;
     top: 25%;
@@ -219,7 +221,7 @@ p {
     text-align: center;
     color: white;
     font-size: xxx-large;
-    margin-top: 1%;
+    margin-top: 5%;
     margin-bottom: 3%;
     top: 8%;
     bottom: 0%;
@@ -229,15 +231,48 @@ p {
     z-index: -1;
 }
 
-.text {
-    color: white;
+.email {
     text-align: center;
+    display: block;
     margin-top: 17%;
+    margin-bottom: 0%;
     font-size: xx-large;
-    top: 8%;
+    top: 0%;
     bottom: 0%;
     right: 0%;
-    left: 0%;
+    left: 46%;
     position: absolute;
     z-index: -1;
+}
+
+@media (max-width: 700px) {
+    .email {
+        justify-content: center;
+        display: block;
+        margin-top: 50%;
+        margin-bottom: 0%;
+        font-size: xx-large;
+        top: 0%;
+        bottom: 0%;
+        right: 0%;
+        left: 30%;
+        position: absolute;
+        z-index: -1;
+    }
+
+    .contactme {
+        color: white;
+        text-align: center;
+        color: white;
+        font-size: xxx-large;
+        margin-top: 10%;
+        margin-bottom: 3%;
+        top: 8%;
+        bottom: 0%;
+        right: 0%;
+        left: 0%;
+        position: absolute;
+        z-index: -1;
+    }
+    
 }
