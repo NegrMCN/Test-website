@@ -234,4 +234,10 @@ p {
     text-align: center;
     margin-top: 17%;
     font-size: xx-large;
+    top: 8%;
+    bottom: 0%;
+    right: 0%;
+    left: 0%;
+    position: absolute;
+    z-index: -1;
 }
