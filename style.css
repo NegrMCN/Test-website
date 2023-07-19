@@ -180,6 +180,31 @@ p {
     z-index: -1;
 }
 
+.motor {
+    width: 250px;
+    margin-top: 25%;
+    margin-left: 41%;
+    top: 0%;
+    bottom: 0%;
+    right: 0%;
+    left: 2%;
+    position: absolute;
+    z-index: -1;
+}
+
+.motortext {
+    color: white;
+    margin-top: 22%;
+    margin-left: 46%;
+    top: 0%;
+    bottom: 0%;
+    right: 0%;
+    left: 0%;
+    position: absolute;
+    z-index: -1;
+}
+
+
 @media (max-width: 700px) {
     .images {
         width: 55% ;
@@ -245,6 +270,72 @@ p {
     z-index: -1;
 }
 
+.Hobbies {
+    color: white;
+    text-align: center;
+    justify-content: center;
+    margin: 0;
+    font-size: xx-large;
+    right: 0%;
+    margin-top: 13%;
+    position: absolute;
+    top: 10%;
+    bottom: 0%;
+    left: 0%;
+    z-index: -1;
+}
+
+.basketball {
+    width: 250px;
+    margin-top: 25%;
+    margin-left: 10%;
+    justify-content: center;
+    display: block;
+    top: 0%;
+    bottom: 0%;
+    right: 0%;
+    left: 2%;
+    position: absolute;
+    z-index: -1;
+}
+
+.balltext {
+    color: white;
+    margin-top: 22%;
+    margin-left: 16%;
+    top: 0%;
+    bottom: 0%;
+    right: 0%;
+    left: 0%;
+    position: absolute;
+    z-index: -1;
+}
+
+.rides {
+    width: 250px;
+    margin-top: 25%;
+    margin-left: 75%;
+    top: 0%;
+    bottom: 0%;
+    right: 0%;
+    left: 0%;
+    position: absolute;
+    z-index: -1;
+}
+
+.ridestext {
+    color: white;
+    margin-top: 22%;
+    margin-left: 80%;
+    top: 0%;
+    bottom: 0%;
+    right: 0%;
+    left: 0%;
+    position: absolute;
+    z-index: -1;
+}
+
+
 @media (max-width: 700px) {
     .email {
         justify-content: center;
@@ -274,5 +365,93 @@ p {
         position: absolute;
         z-index: -1;
     }
+
+    .Hobbies {
+        color: white;
+        text-align: center;
+        justify-content: center;
+        margin: 0;
+        font-size: x-large;
+        right: 0%;
+        margin-top: 56%;
+        position: absolute;
+        top: 10%;
+        bottom: 0%;
+        left: 0%;
+        z-index: -1;
+    }
+
+    .basketball {
+        justify-content: center;
+        display: block;
+        width: 250px;
+        margin-top: 98%;
+        margin-left:20%;
+        top: 0%;
+        bottom: 0%;
+        right: 0%;
+        left: 2%;
+        position: absolute;
+        z-index: -1;
+    }
+
+    .balltext {
+        color: white;
+        margin-top: 90%;
+        margin-left: 10%;
+        top: 0%;
+        bottom: 0%;
+        right: 0%;
+        left: 30%;
+        position: absolute;
+        z-index: -1;
+    }
+
+    .motor {
+        width: 200px;
+        margin-top: 210%;
+        margin-left:28%;
+        top: 0%;
+        bottom: 0%;
+        right: 0%;
+        left: 0%;
+        position: absolute;
+        z-index: -1;
+    }
+
+    .motortext {
+        color: white;
+        margin-top: 200%;
+        margin-left: 35%;
+        top: 0%;
+        bottom: 0%;
+        right: 0%;
+        left: 0%;
+        position: absolute;
+        z-index: -1;
+    }
+
+    .rides {
+        width: 200px;
+        margin-top: 325%;
+        margin-left:28%;
+        top: 0%;
+        bottom: 0%;
+        right: 0%;
+        left: 0%;
+        position: absolute;
+        z-index: -1;
+    }
     
+    .ridestext {
+        color: white;
+        margin-top: 315%;
+        margin-left: 45%;
+        top: 0%;
+        bottom: 0%;
+        right: 0%;
+        left: 0%;
+        position: absolute;
+        z-index: -1;
+    }
 }
