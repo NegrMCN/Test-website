@@ -68,6 +68,7 @@ body {
     border-radius: 10px;
 }
 
+
 @media (max-width: 800px) {
     .navbar {
         flex-direction: column;
@@ -104,9 +105,6 @@ body {
 
 body {
     background-color: #414141;
-}
-.text {
-    color: white;
 }
 
 .dete1 {
@@ -214,9 +212,26 @@ p {
     z-index: -1;
 }
 
+}
 
+.contactme {
+    color: white;
+    text-align: center;
+    color: white;
+    font-size: xxx-large;
+    margin-top: 1%;
+    margin-bottom: 3%;
+    top: 8%;
+    bottom: 0%;
+    right: 0%;
+    left: 0%;
+    position: absolute;
+    z-index: -1;
+}
 
-
-
-
+.text {
+    color: white;
+    text-align: center;
+    margin-top: 17%;
+    font-size: xx-large;
 }
